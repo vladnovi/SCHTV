@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik+Mono+One:regular);
 /*ОБНУЛЕНИЕ*/
 
 *, *::before, *::after {
@@ -8,9 +9,11 @@
 }
 a {
     text-decoration: none;
+    color: #000000;
 }
 ul, ol, li {
     list-style: none;
+    text-decoration: none;
 }
 img {
     vertical-align: top;
@@ -21,3 +24,68 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*НАЧАЛО ВЕРСТКИ*/
+body {
+font-family: 'Rubik Mono One', sans-serif;
+}
+.header {
+    .headerCover {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .headerLogo {
+            .logoimg {
+                width: 40px;
+            }
+        }
+        .headerNav {   
+            .navCover {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+                position: relative;
+                .live {
+                    display: flex;
+                    align-items: center;
+                    .recimg {
+                        width: 20px;
+                     }
+                }
+                .navLink:hover {
+                    color: purple;
+                }
+                .navLink ul {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                }
+                .navLink:hover ul {
+                    display: flex;
+                    flex-direction: column;
+                    column-gap: 10px;
+                    border: purple solid 2px;
+                    border-radius: 10px;
+                    padding: 3px 3px;
+                }
+                .navLinkBottom {
+                    float: none;
+                    position: relative;
+                }
+                .navLinkBottom a {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    font-size: 15px;
+                    color: purple;
+                }
+            }  
+        }
+        .headerLinks {
+            display: flex;
+            align-items: center;
+            .headerLinksImg {
+                width: 35px;
+            }
+        }
+    }
+    
+}

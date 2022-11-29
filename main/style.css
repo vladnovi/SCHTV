@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Rubik+Mono+One:regular);
 /*ОБНУЛЕНИЕ*/
 *, *::before, *::after {
   padding: 0;
@@ -9,10 +10,12 @@
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
 ul, ol, li {
   list-style: none;
+  text-decoration: none;
 }
 
 img {
@@ -24,4 +27,64 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
 }
 
-/*НАЧАЛО ВЕРСТКИ*//*# sourceMappingURL=style.css.map */
+/*НАЧАЛО ВЕРСТКИ*/
+body {
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+.header .headerCover {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .headerCover .headerLogo .logoimg {
+  width: 40px;
+}
+.header .headerCover .headerNav .navCover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+.header .headerCover .headerNav .navCover .live {
+  display: flex;
+  align-items: center;
+}
+.header .headerCover .headerNav .navCover .live .recimg {
+  width: 20px;
+}
+.header .headerCover .headerNav .navCover .navLink:hover {
+  color: purple;
+}
+.header .headerCover .headerNav .navCover .navLink ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+.header .headerCover .headerNav .navCover .navLink:hover ul {
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  border: purple solid 2px;
+  border-radius: 10px;
+  padding: 3px 3px;
+}
+.header .headerCover .headerNav .navCover .navLinkBottom {
+  float: none;
+  position: relative;
+}
+.header .headerCover .headerNav .navCover .navLinkBottom a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: purple;
+}
+.header .headerCover .headerLinks {
+  display: flex;
+  align-items: center;
+}
+.header .headerCover .headerLinks .headerLinksImg {
+  width: 35px;
+}/*# sourceMappingURL=style.css.map */
