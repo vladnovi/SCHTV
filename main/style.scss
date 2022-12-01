@@ -32,6 +32,7 @@ font-family: 'Rubik Mono One', sans-serif;
     right: 0;
     left: 0;
     background-color:#fff;
+    //border-bottom: 1px solid black;
     .headerCover {
         padding: 10px 20px;
         display: flex;
@@ -95,6 +96,7 @@ font-family: 'Rubik Mono One', sans-serif;
         .headerLinks {
             display: flex;
             align-items: center;
+            gap: 10px;
             .headerLinksImg {
                 width: 35px;
             }
@@ -121,14 +123,41 @@ font-family: 'Rubik Mono One', sans-serif;
         background-repeat: no-repeat;
     }
     .mainGrid {
-        position: relative;
         display: grid;
-        grid-row: 1fr 20%;
+        grid-template-columns: 80% 20%;
+        grid-template-areas: "main news";
         .mainBlok {
-            font-size: 100px;
+            grid-area: main;
+            font-size: 50px;
         }
         .newsBlok {
-            font-size: 100px;
+            grid-area: news;
+            background: linear-gradient(to right, rgba($color: #fff, $alpha: 0.4), white);
+            position: fixed;
+            top: 60px;
+            right: 0;
+            min-height: 100%;
+            //border-left: 1px solid black;
+            overflow: scroll;
+
+            .newsTitle {
+                text-align: center;
+                padding-top: 20px;
+                color: purple;
+            }
+            .newsCover {
+                font-size: 10px;
+                padding-left: 30px;
+                padding-right: 60px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                max-width: min-content;
+                .newsImg {
+                    width: 200px;
+                    padding-bottom: 10px;
+                }
+
+            }
         }
     }    
 }
