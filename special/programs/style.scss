@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik+Mono+One:regular);
 /*ОБНУЛЕНИЕ*/
 
 *, *::before, *::after {
@@ -8,9 +9,11 @@
 }
 a {
     text-decoration: none;
+    color: #000000;
 }
 ul, ol, li {
     list-style: none;
+    text-decoration: none;
 }
 img {
     vertical-align: top;
@@ -21,3 +24,82 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*НАЧАЛО ВЕРСТКИ*/
+body {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+.header { 
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color:#fff;
+    //border-bottom: 1px solid black;
+    .headerCover {
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .headerLogo {
+            .logoimg {
+                width: 40px;
+            }
+        }
+        .headerNav {   
+            .navCover {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 20px;
+                position: relative;
+                .live {
+                    display: flex;
+                    align-items: center;
+                    .recimg {
+                        width: 20px;
+                     }
+                }
+                .navLink {
+                    padding: 6px 6px;
+                }
+                .navLink:hover {
+                    border: 1px solid purple;
+                    border-radius: 10px;
+                }
+                .navLink ul {
+                    display: none;
+                    position: absolute;
+                    top: 97%;    
+                    left: 317px;
+                    right: 0; 
+                    text-align: center; 
+                }
+                .navLink:hover ul {
+                    display: flex;
+                    flex-direction: column;
+                    column-gap: 10px;
+                    
+                    border-radius: 10px;
+                    background-color: rgba($color: black, $alpha: 0.5);
+                    border: 1px solid purple;
+                    padding: 6px 3px;
+                }
+                .navLinkBottom {
+                    float: none;
+                    position: relative;
+                }
+                .navLinkBottom a {
+                    font-family: 'Rubik Mono One', sans-serif;
+                    font-size: 12px;
+                    color: #fff;
+                }
+            }  
+        }
+        .headerLinks {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .headerLinksImg {
+                width: 35px;
+            }
+        }
+    } 
+}
