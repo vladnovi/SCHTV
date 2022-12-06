@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Rubik+Mono+One:regular);
+/*ОБНУЛЕНИЕ*/
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul, ol, li {
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/*НАЧАЛО ВЕРСТКИ*/
+body {
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+.header {
+  text-align: center;
+}
+.header .logoimg {
+  width: 60px;
+}
+
+.auth .authCover {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  right: 30%;
+  bottom: 30%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+.auth .authCover .authHeadText {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
+}
+.auth .authCover .authForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.auth .authCover .authForm label {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.auth .authCover .authForm input {
+  margin-bottom: 15px;
+  padding: 10px 50px;
+  text-align: center;
+  border: 1px solid purple;
+  border-radius: 10px;
+}
+.auth .authCover .authFormButton {
+  margin-top: 25px;
+  padding: 10px 30px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+.auth .authCover .authFormButton:hover {
+  cursor: pointer;
+  background-color: #000000;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
