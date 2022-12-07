@@ -103,3 +103,59 @@ body {
         }
     } 
 }
+.mainCover {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 90px;
+    a {
+        text-decoration: underline;
+        color: purple;
+    }
+    .contactBlockCover {
+        margin-left: 10%;
+        margin-right: 10%;
+        .advertising {
+            .contactTitle {
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+            .contactBlockTitle {
+                margin-top: 20px;
+                margin-bottom: 10px;
+                margin-left: 20px;
+                font-size: 12px;
+                color: rgba($color: gray, $alpha: 0.7);
+            }
+            .contactInfoTitle {
+                margin-left: 40px;
+                font-size: 15px;
+            }
+        }
+        .dispatcher {
+            display: flex;
+            gap: 100px;
+            margin-top: 100px;
+        }
+        .editorial {
+            display: flex;
+            gap: 100px;
+            margin-top: 100px;
+        }
+        .infoBlock {
+            .contactTitle {
+                margin-bottom: 50px;
+                font-weight: bold;
+            }
+            .contactBlockTitle {
+                margin-bottom: 10px;
+                margin-top: 20px;
+                margin-left: 10px;
+                font-size: 12px;
+                color: rgba($color: gray, $alpha: 0.7);
+            }
+            .contactInfoTitle {
+                margin-left: 30px;
+                font-size: 15px;
+            }
+        }
+    }
+}
